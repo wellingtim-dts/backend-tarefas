@@ -1,14 +1,13 @@
-//converção de temperatura
-
+// Conversão de temperatura
 const cidade = "Curitiba";
-const temCelsius = 18.5;
+const tempCelsius = 18.5; // Corrigido de temCelsius para tempCelsius
 
 const tempFahrenheit = tempCelsius * (9/5) + 32;
-const tempKelvin = tempCelsius + 273.15const variacoDiaria = 26.3 - tempCelsius;
+const tempKelvin = tempCelsius + 273.15; // Adicionado ponto e vírgula
+const variacaoDiaria = 26.3 - tempCelsius; // Corrigido erro de digitação
 
-console.log(`\nCelsius: ${tempCelsius} Cº`);
-console.log(`Fahrenheit: ${tempFahrenheit.toFixed(1)} Fº`);
-console.log(`Kelvin: ${tempKelvin} Kº`);
-console.log(`\nVariação prevista: ${variacaoDiaria.toFixed(1)} Cº`);
-
-// Tecla Alt Gr + tecla colchetes para fazer o º
+console.log(`Cidade: ${cidade}`);
+console.log(`Celsius: ${tempCelsius} °C`);
+console.log(`Fahrenheit: ${tempFahrenheit.toFixed(1)} °F`);
+console.log(`Kelvin: ${tempKelvin.toFixed(2)} K`);
+console.log(`\nVariação prevista: ${variacaoDiaria.toFixed(1)} °C`);
